@@ -1,0 +1,1 @@
+std::vector<bool> is not the same as other STL containers. It is implemented using bit manipulation, which can lead to unexpected behavior if you treat it like a regular vector of booleans. For example, accessing elements using at() may not throw an exception even if the index is out of bounds, and iterators are not random access iterators.  This can lead to hard-to-find bugs.
